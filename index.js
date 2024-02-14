@@ -1,5 +1,6 @@
 function sayHello() {
-  return "Hello, World!";
+  const date = new Date().toLocaleDateString();  
+    return "Hello, World! Today is the " + date + ".";
 }
 
 module.exports = sayHello;
