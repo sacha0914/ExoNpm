@@ -1,2 +1,2 @@
-const sayHello = require('../index.js')
+const sayHello = require('sachasacha')
 console.log(sayHello()) // Hello, World!
