@@ -1,6 +1,34 @@
-function sayHello() {
-  const date = new Date().toLocaleDateString();  
-    return "Hello, World! Today is the " + date + ". BTW je ne pense pas être un moteur pour cette classe.";
+class Magic8Ball {
+  constructor() {
+    this.answers = [
+      "It is certain",
+      "It is decidedly so",
+      "Without a doubt",
+      "Yes - definitely",
+      "You may rely on it",
+      "As I see it, yes",
+      "Most likely",
+      "Outlook good",
+      "Yes",
+      "Signs point to yes",
+      "Reply hazy, try again",
+      "Ask again later",
+      "Better not tell you now",
+      "Cannot predict now",
+      "Concentrate and ask again",
+      "Don't count on it",
+      "My reply is no",
+      "My sources say no",
+      "Outlook not so good",
+      "Very doubtful"
+    ];
+  }
+
+  shake() {
+    const randomIndex = Math.floor(Math.random() * this.answers.length);
+    console.log(randomIndex);
+    return this.answers[randomIndex];
+  }
 }
 
-module.exports = sayHello;
+module.exports = Magic8Ball;
